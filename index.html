@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SIGN IN FORM</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+	<form action="" method="POST" class="sign" autocomplete="off">
+		<div class="sign__head">
+			<a href="#" class="sign__link sign--active">Sign in</a>
+			<a href="#" class="sign__link sign--mleft">Join us</a>
+		</div>
+		<div class="sign__body">
+			<div class="sign__group">
+				<label for="name" class="sign__label">
+					Username
+				</label>
+				<input class="sign__input" type="text" name="name" required minlength="8" maxlength="20" pattern="([1-9])+(?:-?\d){4,}" placeholder="">
+			</div>
+			<div class="sign__group">
+				<label for="number" class="sign__label">
+					Password
+				</label>
+				<input class="sign__input" type="password" name="number" required minlength="8" maxlength="16" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder=" ">
+			</div>
+			<div class="sign__group">
+				<label>
+					<input class="sign__checkbox" type="checkbox" name="">
+					<span class="sign__check">Keep me signed in</span>
+				</label>
+			</div>
+			<div class="sign__foot">
+			<button type="submit" class="sign__submit">Sign in</button>
+			<div class="sign__helper">
+				<a href="#">Forgot password</a>
+				<a href="#">Create an account</a>
+			</div>
+			</div>
+		</div>
+	</form>
+
+</body>
+</html>
