@@ -24,7 +24,7 @@ body {
 .sign{
 	
 	width: 400px;
-	height: 500px;
+	// height: 500px;
 	background: linear-gradient(45deg, rgba(46, 29, 196, .9), rgba(197, 123, 219, .5) 70%), url(../img/vector.png);
 	background-size: contain;
 	background-size: auto 100%;
@@ -33,7 +33,8 @@ body {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	box-shadow: 0 10px 50px 10px rgba(0, 0, 0, .5);
+	z-index: 2;
+	// box-shadow: 0 10px 50px 10px rgba(0, 0, 0, .5);
 	&__body,
 	&__head{
 		padding: 35px 50px;
@@ -84,10 +85,12 @@ body {
 		-webkit-appearance:none;
 		outline: none;
 		background-color: #fff;
+
 	}
 	&__check{
 		color: #fbeaae;
 		font-weight: bold;
+		padding: 10px;
 	}
 
 	&__checkbox,
@@ -129,5 +132,12 @@ body {
 		font-size: 1rem;
 		border-bottom: 0.5px solid #d1aae9;
 		}
+	}
+	&__shadow{
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, 260%);
+		z-index: 1;
 	}
 }
